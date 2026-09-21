@@ -38,6 +38,38 @@ The read path uses `asyncio.BufferedProtocol` (`get_buffer` /
 copy per read and the allocation of an intermediate `bytes` object. The
 change was made for memory and speed; the workaround above is the price.
 
+## Reads from the socket can be capped per call (`max_read_size`)
+
+**Type:** decision
+**Status:** open
+**Evidence:** confirmed
+**Source:** issue #117, pull request #118 (measurements in its description); the unicorn-binance-websocket-api replay benchmark that surfaced it
+**Revisit when:** #118 is merged (record the chosen default here) or rejected
+
+`get_buffer()` hands the transport the whole free part of the read buffer.
+When the peer is faster than the consumer, the kernel receive buffer holds
+megabytes and one read pulls all of it in; the buffer doubles to fit and
+never shrinks, and the frames are then copied out and decoded after their
+bytes have left the CPU cache. On 450 KB frames from a loopback firehose
+this made picows slower per message than the pure-Python `websockets`
+library, whose asyncio transport reads 256 KB at a time (strace: 79 reads
+of ~3.4 MB versus 1,060 reads of 256 KB for the same 600 messages).
+
+**Decision proposed in #118:** a `max_read_size` argument on `ws_connect()`
+and `ws_create_server()`, applied in `get_buffer()` as an upper bound on
+the bytes offered per read, default `0` = unchanged. With 256 KB the same
+scenario went from 3,780 to 8,381 msgs/s (297 to 146 µs CPU per message);
+the echo case with a fast consumer does not change.
+
+**Rejected alternative:** a larger `read_buffer_init_size`. A 4 MiB
+initial buffer measured the same as the 16 KB default (313 vs. 229 µs
+against websockets), so the doubling is not where the time goes; it
+happens a few times per connection, the per-byte cost is in every read.
+
+**Open:** whether the default should be a cap in the range of the asyncio
+transport's 256 KB instead of `0`; that is the maintainer's call and is
+asked in #118.
+
 ## `aiofastnet` is an optional dependency, and the write path trusts its copy guarantee
 
 **Type:** decision
