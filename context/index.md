@@ -36,7 +36,7 @@ Why picows is built the way it is.
 
 ## E
 
-- [event-loops.md](event-loops.md) — how picows plugs into asyncio, uvloop, winloop and aiofastnet, and why the transport layer is written the way it is
+- [event-loops.md](event-loops.md) — how picows plugs into asyncio, uvloop, winloop and aiofastnet, and why the transport layer is written the way it is, including the proposed per-read cap (`max_read_size`, #117/#118)
 
 ## F
 
