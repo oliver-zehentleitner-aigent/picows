@@ -1,6 +1,6 @@
 {
  "state-json": 1,
- "generated": "2026-09-30T09:55:51Z",
+ "generated": "2026-09-30T10:03:39Z",
  "dashboard": "0.4.0",
  "linter": "0.18.1.0",
  "project": {
@@ -155,19 +155,19 @@
    ],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -203,19 +203,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -251,19 +251,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -301,19 +301,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -349,19 +349,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -406,19 +406,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -473,19 +473,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-21",
      "commit": "26f797e"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "open",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-21",
       "commit": "26f797e"
      }
@@ -521,19 +521,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -571,19 +571,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -630,19 +630,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -687,19 +687,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -737,19 +737,19 @@
    ],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -785,19 +785,19 @@
    "refs": [],
    "git": {
     "created": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-11",
      "commit": "82ee159"
     },
     "last_touched": {
-     "author": "Oliver Zehentleitner AIgent",
+     "author": "author-1",
      "date": "2026-09-30",
      "commit": "db0de39"
     },
     "status_history": [
      {
       "status": "active",
-      "author": "Oliver Zehentleitner AIgent",
+      "author": "author-1",
       "date": "2026-09-11",
       "commit": "82ee159"
      }
@@ -808,7 +808,7 @@
  ],
  "authors": [
   {
-   "name": "Oliver Zehentleitner AIgent",
+   "name": "author-1",
    "created": 13,
    "touched": 13,
    "superseded": 0,
@@ -820,7 +820,7 @@
    }
   }
  ],
- "anonymized": false,
+ "anonymized": true,
  "findings": {
   "errors": 0,
   "warnings": 0,
