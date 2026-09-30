@@ -4,9 +4,10 @@ README, for what Keep the Why actually is.
 
 <!-- keep-the-why:config -->
 - id: tarasko---picows
+- canonical: https://github.com/tarasko/picows
 - context: `context/`
 - init: complete
-- context-schema: 0.17.0
+- context-schema: 0.18.1
 - capture-confirmation: automatic
 - source-reference: never
 <!-- /keep-the-why:config -->

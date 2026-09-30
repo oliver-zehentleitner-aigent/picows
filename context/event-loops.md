@@ -2,6 +2,7 @@
 
 ## The protocol class derives from a dummy Cython type first and `asyncio.BufferedProtocol` second
 
+**Id:** 4aaa0f70-0611-4c01-aa0d-90580a89ba08
 **Type:** workaround
 **Status:** active
 **Evidence:** confirmed
@@ -25,11 +26,13 @@ yet in `docs/`.
 
 ## Buffered protocol instead of `data_received`
 
+**Id:** c55efb4d-d6c0-4110-b68e-56b8307f53aa
 **Type:** decision
 **Status:** active
 **Evidence:** inferred
 **Source:** pull request #69 ("Enable buffered protocol as it is more memory efficient and faster")
 **Revisit when:** a supported event loop stops implementing `BufferedProtocol`
+**See:** event-loops.md#the-protocol-class-derives-from-a-dummy-cython-type-first-and-asynciobufferedprotocol-second — 4aaa0f70-0611-4c01-aa0d-90580a89ba08 — as of 2026-09-30
 
 The read path uses `asyncio.BufferedProtocol` (`get_buffer` /
 `buffer_updated`) rather than the plain `data_received` callback.
@@ -40,11 +43,14 @@ change was made for memory and speed; the workaround above is the price.
 
 ## Reads from the socket can be capped per call (`max_read_size`)
 
+**Id:** 0dfae98e-3584-46ed-86cc-d5207eb3f66b
 **Type:** decision
 **Status:** open
 **Evidence:** confirmed
 **Source:** issue #117, pull request #118 (measurements in its description); the unicorn-binance-websocket-api replay benchmark that surfaced it
 **Revisit when:** #118 is merged (record the chosen default here) or rejected
+**See:** https://github.com/oliver-zehentleitner/unicorn-binance-websocket-api — b8a65cf6-d48b-42dd-8924-e5682ba6f947 — as of 2026-09-30
+**See:** https://github.com/oliver-zehentleitner/unicorn-binance-websocket-api — 2be4c0ef-a914-4ae8-880c-6e2c56473864 — as of 2026-09-30
 
 `get_buffer()` hands the transport the whole free part of the read buffer.
 When the peer is faster than the consumer, the kernel receive buffer holds
@@ -70,8 +76,15 @@ happens a few times per connection, the per-byte cost is in every read.
 transport's 256 KB instead of `0`; that is the maintainer's call and is
 asked in #118.
 
+The consumer-side half of the same finding lives in the project that
+surfaced it: its stream loop scanned every payload in full for endpoint
+markers, which is what made the consumer slower than the wire; that scan is
+now confined to the message head (first `See` line: the benchmark and its
+reading, second: that fix).
+
 ## `aiofastnet` is an optional dependency, and the write path trusts its copy guarantee
 
+**Id:** 36e0f3f5-8050-45de-ae0e-20ce5d14684a
 **Type:** decision
 **Status:** active
 **Evidence:** confirmed

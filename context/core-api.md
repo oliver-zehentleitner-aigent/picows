@@ -2,6 +2,7 @@
 
 ## `WSUpgradeRequest` / `WSUpgradeResponse` keep a mixed bytes/str shape
 
+**Id:** 0e6c741e-10f5-4c7f-ba01-3cfbcce126ad
 **Type:** constraint
 **Status:** active
 **Evidence:** confirmed
@@ -24,6 +25,7 @@ untouched.
 
 ## Send-side calls after a CLOSE frame are no-ops
 
+**Id:** 83fb4927-32e0-4f3b-b6a8-b3c0bfa55b04
 **Type:** constraint
 **Status:** active
 **Evidence:** confirmed
@@ -45,6 +47,7 @@ state-based suppression of its own around shutdown.
 
 ## `max_frame_size` applies to non-control frames only
 
+**Id:** b56b37dd-a82f-487f-8349-e93a7846035f
 **Type:** decision
 **Status:** active
 **Evidence:** inferred
