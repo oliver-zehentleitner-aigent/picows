@@ -4,7 +4,8 @@ README, for what Keep the Why actually is.
 
 <!-- keep-the-why:config -->
 - id: tarasko---picows
-- canonical: https://github.com/tarasko/picows
+- canonical: https://github.com/oliver-zehentleitner-aigent/picows
+- dashboard-state: https://oliver-zehentleitner-aigent.github.io/picows/keep-the-why-dashboard/state.json
 - context: `context/`
 - init: complete
 - context-schema: 0.20.0
